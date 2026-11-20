@@ -1,0 +1,4 @@
+student,params_M,baseline_acc,kd_acc,kd_gain
+mobilenetv2,2.352,65.01,67.74,2.73
+squeezenet,0.777,62.4,63.65,1.25
+efficientnet_lite0,3.499,66.35,68.86,2.51

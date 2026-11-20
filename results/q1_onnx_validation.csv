@@ -1,0 +1,7 @@
+model,arch,variant,torch_acc,onnx_acc,max_logit_diff,onnx_mb
+baseline_mobilenetv2,mobilenetv2,baseline,65.01,65.04,5.7220458984375e-06,8.94701862335205
+kd_mobilenetv2,mobilenetv2,kd,67.74,67.72,9.5367431640625e-06,8.94701862335205
+baseline_squeezenet,squeezenet,baseline,62.4,62.37,5.7220458984375e-06,2.963176727294922
+kd_squeezenet,squeezenet,kd,63.65,63.64,9.059906005859375e-06,2.963176727294922
+baseline_efficientnet_lite0,efficientnet_lite0,baseline,66.35,66.28,5.7220458984375e-06,13.305562019348145
+kd_efficientnet_lite0,efficientnet_lite0,kd,68.86,68.85,5.7220458984375e-06,13.305562019348145

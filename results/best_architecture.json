@@ -1,0 +1,43 @@
+{
+  "trial": 11,
+  "config": {
+    "resolution": 32,
+    "stem_channels": 24,
+    "n_stages": 3,
+    "stages": [
+      {
+        "depth": 1,
+        "channels": 48,
+        "kernel": 3,
+        "block": "dws",
+        "act": "silu"
+      },
+      {
+        "depth": 3,
+        "channels": 128,
+        "kernel": 7,
+        "block": "dws",
+        "act": "hardswish"
+      },
+      {
+        "depth": 3,
+        "channels": 24,
+        "kernel": 3,
+        "block": "conv",
+        "act": "relu"
+      }
+    ]
+  },
+  "description": "res32 stem24 | [1x dws k3 c48 silu] > [3x dws k7 c128 hardswish] > [3x conv k3 c24 relu]",
+  "search_val_acc": 60.06,
+  "score": 0.5930798846464547,
+  "params": 95802,
+  "onnx_size_mb": 0.3659706115722656,
+  "cpu_latency_ms": 0.6768520599871408,
+  "peak_mem_mb": 17.296875,
+  "constraints": {
+    "max_latency_ms": 10.0,
+    "max_size_mb": 2.0,
+    "max_peak_mem_mb": 150.0
+  }
+}
